@@ -67,7 +67,7 @@ def umidade(update: Update, context: CallbackContext) -> None:
 def main() -> None:
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("1862391882:AAHtU1ybUfcI5zEMLXzSaEL1v4DeNe0f9_s")
+    updater = Updater("telegram-token")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
