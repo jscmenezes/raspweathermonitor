@@ -79,5 +79,28 @@ Para testar o funcionamento execute o script simpletest.py e o retorno deve most
 $ python simpletest.py 
 Temp=17.0*C  Humidity=92.0%
 ```
+# Criando o bot Telegram
 
+Siga os passos descritos em https://core.telegram.org/bots#creating-a-new-bot
 
+Após criar o seu Bot você receberá um token.
+Adicione o token no arquivo rwmbot.py na linha semelhante a
+
+```
+updater = Updater("token-do-telegram")
+```
+
+Execute o arquivo para testar o bot
+```
+$ python rwmbot.py
+```
+
+Adicione seu bot no Telegram e inicie a conversa enviando os comandos /start e a após realize um teste com o /eco
+```
+> /start
+> /echo "Olá meu robô!"
+```
+Se você receber a sua mensagem de volta é porque o bot está funcionando.
+Verifique a temperatura e a umidade do seu sensor com os comandos /temperatura e /umidade.
+
+É isto!
